@@ -13,7 +13,7 @@
 
 <br>
 
-<img src="contextforge-ui.png" alt="ContextForge Interface" width="900">
+<img src="contextforge-ui.png" alt="ContextForge Interface" width="760">
 
 <br><br>
 
