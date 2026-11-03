@@ -4,7 +4,7 @@
 
 It helps preserve important requirements, numeric constraints, evidence provenance, and traceability while removing unnecessary context.
 
-![ContextForge Interface](docs/contextforge-ui.png) 
+![ContextForge Interface](contextforge-ui.png)
 
 ---
 
