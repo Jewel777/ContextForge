@@ -1,99 +1,151 @@
-# ContextForge
+<div align="center">
 
-**ContextForge** is a local-first AI context compiler that turns documents and pasted text into compact, task-relevant context for AI model handoff.
+# ⚡ ContextForge
 
-It helps preserve important requirements, numeric constraints, evidence provenance, and traceability while removing unnecessary context.
+### Distill the signal. Keep the evidence.
 
-![ContextForge Interface](contextforge-ui.png)
+**Local-first AI context compiler for evidence-aware, traceable, and token-efficient model handoff.**
 
----
+[![Release](https://img.shields.io/badge/release-v2.1.0-blue?style=for-the-badge)](https://github.com/Jewel777/ContextForge/releases/tag/v2.1.0)
+![Windows](https://img.shields.io/badge/Windows-x64-0078D6?style=for-the-badge&logo=windows)
+![Status](https://img.shields.io/badge/status-public%20beta-orange?style=for-the-badge)
+![Local First](https://img.shields.io/badge/processing-local--first-success?style=for-the-badge)
 
-## ⬇️ Download ContextForge for Windows
+<br>
 
-### [Download ContextForge 2.1.0 — Windows x64](https://github.com/Jewel777/ContextForge/releases/download/v2.1.0/ContextForge-2.1.0-Windows-x64.zip)
+<img src="contextforge-ui.png" alt="ContextForge Interface" width="900">
 
-**Current release:** `ContextForge 2.1.0 — First Public Beta`
+<br><br>
 
-> Windows x64 only. macOS builds are not available yet.
+### ⬇️ Download for Windows
 
-### Quick Start
+[![Download ContextForge](https://img.shields.io/badge/Download-ContextForge%202.1.0-2563EB?style=for-the-badge&logo=github)](https://github.com/Jewel777/ContextForge/releases/download/v2.1.0/ContextForge-2.1.0-Windows-x64.zip)
 
-1. Download `ContextForge-2.1.0-Windows-x64.zip`
-2. Right-click the ZIP and choose **Extract All...**
-3. Open the extracted folder
-4. Double-click **`Start-ContextForge.cmd`**
-5. Wait a few seconds while the local engine starts
-6. ContextForge will open automatically in your browser
+**Windows x64 · No Python required · No Node.js setup · Local embedding model included**
 
-If the page briefly shows **Engine offline**, wait a few seconds and refresh once.
-
-When ready, the top-right status will show:
-
-**🟢 Engine online**
-
-No separate Python, Node.js, or embedding-model installation is required.
+</div>
 
 ---
 
-## ⚠️ Which File Should I Download?
+## 🚀 What is ContextForge?
 
-From the GitHub Release page, download:
+ContextForge turns large documents and raw text into **compact, task-relevant context** before the information is handed to an AI model.
+
+Instead of blindly sending everything, ContextForge identifies what matters, preserves critical evidence, removes lower-value context, and exposes what survived.
+
+It is designed for workflows where **requirements, numeric constraints, provenance, and traceability matter**.
+
+---
+
+## ✨ Core Capabilities
+
+| | Capability | What it does |
+|---|---|---|
+| 🧠 | **Semantic + Lexical Retrieval** | Combines semantic similarity with lexical evidence |
+| 🗂️ | **Hierarchical Retrieval** | Retrieves evidence across document sections and sentences |
+| ✂️ | **Evidence-Aware Compression** | Reduces context while protecting important information |
+| 🔢 | **Numeric Preservation** | Protects values such as limits, durations, counts, and thresholds |
+| 🛡️ | **Critical Evidence Safeguards** | Preserves mandatory requirements, prohibitions, and controls |
+| 🔎 | **Selected / Rejected Evidence** | Shows what was kept and what was excluded |
+| 🔗 | **Provenance** | Tracks compiled context back to source evidence |
+| 📊 | **Trust & Coverage Checks** | Measures evidence quality and objective coverage |
+| 🖥️ | **Local-First Processing** | Core compilation runs on your own computer |
+| 🤖 | **Model-Agnostic Output** | Works with ChatGPT, Claude, Gemini, and other models |
+
+---
+
+## ⚡ Quick Start
+
+### 1. Download
+
+Download the Windows package:
+
+**[`ContextForge-2.1.0-Windows-x64.zip`](https://github.com/Jewel777/ContextForge/releases/download/v2.1.0/ContextForge-2.1.0-Windows-x64.zip)**
+
+> Do not download GitHub's automatically generated `Source code (zip)` or `Source code (tar.gz)` files.
+
+### 2. Extract
+
+Right-click the ZIP file and choose:
+
+**Extract All...**
+
+### 3. Launch
+
+Open the extracted folder and double-click:
 
 ```text
-ContextForge-2.1.0-Windows-x64.zip
+Start-ContextForge.cmd
 ```
 
-Do **not** download:
+### 4. Use ContextForge
+
+Your browser will open automatically at:
 
 ```text
-Source code (zip)
-Source code (tar.gz)
+http://127.0.0.1:3000
 ```
 
-Those are GitHub-generated repository archives and are **not** the Windows application.
+If **Engine offline** appears briefly, wait a few seconds and refresh once.
+
+When ready, the status will show:
+
+```text
+🟢 Engine online
+```
 
 ---
 
-# What ContextForge Does
+## 🎯 How It Works
 
-Large documents often contain far more information than an AI model actually needs for a specific task.
-
-ContextForge helps identify, rank, compress, and preserve the evidence that matters before the context is sent to a model.
-
-It can:
-
-- Read PDF, DOCX, TXT, and pasted text
-- Identify task-relevant evidence
-- Combine semantic and lexical retrieval
-- Preserve exact numeric constraints
-- Protect critical requirements from being dropped
-- Compress unnecessary context
-- Track evidence provenance
-- Show selected and rejected evidence
-- Measure objective coverage
-- Perform trust and evidence checks
-- Produce model-ready context
-- Export output for ChatGPT, Claude, Gemini, or other models
+```text
+Source Material
+      │
+      ▼
+┌──────────────────────┐
+│  Retrieval Pipeline  │
+│ Semantic + Lexical   │
+└──────────┬───────────┘
+           │
+           ▼
+┌──────────────────────┐
+│ Evidence Evaluation  │
+│ Requirements         │
+│ Numeric Constraints  │
+│ Provenance           │
+└──────────┬───────────┘
+           │
+           ▼
+┌──────────────────────┐
+│ Context Compilation  │
+│ Safe / Balanced /    │
+│ Aggressive           │
+└──────────┬───────────┘
+           │
+           ▼
+     Model-Ready Context
+           │
+           ▼
+ ChatGPT / Claude / Gemini
+```
 
 ---
 
-# How to Use ContextForge
+## 🧭 Typical Workflow
 
-## 1. Add Source Material
+### 01 · Add Source
 
-Upload a:
+Upload:
 
 - PDF
 - DOCX
 - TXT
 
-or choose **Paste** to enter text directly.
+or paste text directly.
 
----
+### 02 · Define the Objective
 
-## 2. Define Your Objective
-
-Tell ContextForge what information needs to survive the compilation.
+Tell ContextForge what information must survive.
 
 Example:
 
@@ -102,357 +154,187 @@ Extract all mandatory authentication and security requirements.
 Preserve exact numeric limits and exclude unrelated operational details.
 ```
 
-Your objective guides retrieval and evidence selection.
+### 03 · Compile
 
----
+Choose your processing mode and context budget.
 
-## 3. Choose a Context Budget
+### 04 · Verify
 
-Set the approximate maximum amount of context you want ContextForge to retain.
+Inspect:
 
-This helps reduce unnecessary material before model handoff.
+- compiled context
+- selected evidence
+- rejected evidence
+- provenance
+- objective coverage
+- trust checks
+- retrieval diagnostics
 
----
-
-## 4. Compile
-
-Run the compilation.
-
-ContextForge will:
-
-- analyze the source
-- retrieve relevant evidence
-- rank candidate information
-- preserve critical constraints
-- remove lower-value context
-- produce a compact model-ready result
-
----
-
-## 5. Review the Evidence
-
-ContextForge exposes more than just the final output.
-
-You can inspect:
-
-- Compiled context
-- Selected evidence
-- Rejected evidence
-- Evidence provenance
-- Retrieval diagnostics
-- Objective coverage
-- Trust checks
-- Critical-evidence preservation
-
-This makes it easier to verify **what survived and why**.
-
----
-
-## 6. Use the Result
+### 05 · Use the Output
 
 Copy the compiled context into:
 
 - ChatGPT
 - Claude
 - Gemini
-- another AI model
-- an agent workflow
-- your own prompt pipeline
-
-ContextForge itself does not require a paid AI model to perform local context compilation.
+- agent workflows
+- custom prompt pipelines
 
 ---
 
-# Standard and Advanced Interfaces
+## 🎚️ Processing Modes
 
-ContextForge includes two interfaces.
+| Mode | Best for |
+|---|---|
+| 🛡️ **Safe** | Maximum evidence preservation |
+| ⚖️ **Balanced** | General-purpose compilation |
+| ⚡ **Aggressive** | Stronger context reduction |
+
+---
+
+## 🖥️ Standard vs Advanced
 
 ### Standard
 
-Designed for straightforward context compilation.
+Designed for fast, focused use:
 
-Use it when you primarily want to:
-
-- add source material
-- define an objective
+- add content
+- define objective
 - compile
-- inspect the result
+- review output
 
 ### Advanced
 
-Provides deeper engineering, evidence, and governance information.
+Adds deeper visibility into:
 
-Use it when you want additional visibility into:
-
-- retrieval behavior
-- evidence selection
+- retrieval diagnostics
+- evidence provenance
 - rejected evidence
-- provenance
 - trust metrics
 - objective coverage
-- diagnostic information
+- engineering controls
 
 ---
 
-# Processing Modes
+## 🔐 Local-First Architecture
 
-ContextForge provides three context-selection modes.
-
-### Safe
-
-Prioritizes preserving potentially important evidence.
-
-Best when missing a requirement would be more costly than retaining some additional context.
-
-### Balanced
-
-Balances compression with evidence retention.
-
-Recommended for most general use cases.
-
-### Aggressive
-
-Prioritizes stronger context reduction.
-
-Useful when context size is heavily constrained and stronger compression is desired.
-
----
-
-# Key Capabilities
-
-### Local-First Processing
-
-Core context compilation runs locally on your computer.
-
-### Hierarchical Retrieval
-
-ContextForge performs retrieval across document structure rather than treating every piece of text identically.
-
-### Semantic + Lexical Ranking
-
-Semantic similarity and lexical evidence are combined to improve retrieval quality.
-
-### Evidence-Aware Compression
-
-Context is reduced while attempting to preserve the evidence most important to the objective.
-
-### Numeric Constraint Preservation
-
-Important numeric requirements such as:
+The Windows package includes everything required to run ContextForge:
 
 ```text
-15 minutes
-20 MB
-5 attempts
-7 days
+ContextForge-2.1.0/
+│
+├── Start-ContextForge.cmd
+├── Start-ContextForge.ps1
+├── backend/
+├── frontend/
+├── models/
+└── runtime/
 ```
 
-are protected during compilation.
-
-### Critical Requirement Safeguards
-
-Mandatory requirements, prohibitions, controls, and other high-value evidence receive additional protection.
-
-### Provenance and Traceability
-
-Selected context can be traced back to its source evidence.
-
-### Selected / Rejected Evidence Inspection
-
-Users can inspect both what ContextForge kept and what it rejected.
-
-### Trust and Objective Coverage
-
-ContextForge provides diagnostics showing how well the compiled result covers the requested objective.
-
----
-
-# Local-First Architecture
-
-The Windows package contains everything required to run ContextForge locally:
-
-```text
-Start-ContextForge.cmd
-Start-ContextForge.ps1
-backend/
-frontend/
-models/
-runtime/
-```
-
-The package includes:
-
-- ContextForge backend engine
-- ContextForge web interface
-- bundled Node.js runtime
-- local embedding model
-- Windows startup launcher
-
-You do **not** need to separately install:
+You do **not** need to install:
 
 - Python
 - Node.js
-- sentence-transformers
 - PyTorch
+- sentence-transformers
 - the embedding model
 
----
-
-# Local Services
-
-When ContextForge starts, it runs locally at:
-
-### Web Interface
-
-```text
-http://127.0.0.1:3000
-```
-
-### ContextForge Engine
-
-```text
-http://127.0.0.1:8001
-```
-
-These addresses point to services running on your own computer.
+Core context compilation runs locally.
 
 ---
 
-# Windows Installation
+## 🌐 Local Services
 
-## Step 1 — Download
+| Service | Address |
+|---|---|
+| ContextForge UI | `http://127.0.0.1:3000` |
+| ContextForge Engine | `http://127.0.0.1:8001` |
 
-Download:
-
-```text
-ContextForge-2.1.0-Windows-x64.zip
-```
-
-from the official ContextForge GitHub Release.
-
-## Step 2 — Extract
-
-Right-click the downloaded ZIP and select:
-
-**Extract All...**
-
-## Step 3 — Open the Folder
-
-You should see:
-
-```text
-Start-ContextForge.cmd
-Start-ContextForge.ps1
-backend/
-frontend/
-models/
-runtime/
-```
-
-## Step 4 — Launch
-
-Double-click:
-
-```text
-Start-ContextForge.cmd
-```
-
-For normal use, you do **not** need to manually run `Start-ContextForge.ps1`.
-
-## Step 5 — Wait for the Engine
-
-Your browser should open automatically.
-
-The embedding model may take several seconds to load during startup.
-
-If **Engine offline** appears initially:
-
-1. wait a few seconds
-2. refresh the browser once
-
-The status should change to:
-
-**Engine online**
+These services run only on your local machine.
 
 ---
 
-# Windows Security Notice
+## 🔒 Privacy
 
-ContextForge 2.1.0 is a public beta and is not currently code-signed.
+ContextForge is designed around local-first processing.
 
-Windows may therefore display a security warning when launching the application.
+Source documents are processed by the local ContextForge engine.
 
-Only download ContextForge from the official GitHub repository and release page.
+If you copy the compiled output into an external AI service, that service's own privacy and data-handling policies apply.
 
 ---
 
-# Supported Platforms
+## 💻 Platform Support
 
 | Platform | Status |
 |---|---|
 | Windows x64 | ✅ Available |
-| macOS Apple Silicon | 🚧 Not yet available |
-| macOS Intel | 🚧 Not yet available |
-| Linux | 🚧 Not yet available |
+| macOS Apple Silicon | 🚧 Planned |
+| macOS Intel | 🚧 Planned |
+| Linux | 🚧 Planned |
 
 ---
 
-# Privacy
+## ⚠️ Windows Security Notice
 
-ContextForge is designed around local-first processing.
+ContextForge 2.1.0 is currently a public beta and is not code-signed.
 
-Source documents and context compilation are processed by the local ContextForge engine.
+Windows may display a security warning when launching the application.
 
-Users should still independently review the privacy requirements of any external AI service they choose to send the final compiled context to.
+Only download ContextForge from the official repository:
+
+**https://github.com/Jewel777/ContextForge**
 
 ---
 
-# Current Release
+## 🧪 Current Release
 
-## ContextForge 2.1.0 — First Public Beta
+### ContextForge 2.1.0 — First Public Beta
 
-The first public beta includes:
+Includes:
 
-- Local document processing
+- local-first processing
 - PDF, DOCX, TXT, and pasted-text input
-- Hierarchical retrieval
-- Semantic and lexical ranking
-- Evidence-aware compression
-- Numeric constraint preservation
-- Critical requirement safeguards
-- Provenance and traceability
-- Selected/rejected evidence inspection
-- Trust checks
-- Objective-coverage analysis
+- hierarchical retrieval
+- semantic and lexical ranking
+- evidence-aware compression
+- exact numeric constraint preservation
+- critical evidence safeguards
+- provenance and traceability
+- selected/rejected evidence inspection
+- trust checks
+- objective-coverage analysis
 - Safe, Balanced, and Aggressive modes
 - Standard and Advanced interfaces
 - ChatGPT, Claude, Gemini, and raw-context output
-
-The application is publicly distributed as a compiled Windows build.
 
 **Source code is maintained privately.**
 
 ---
 
-# Feedback and Bug Reports
+## 🐛 Feedback & Issues
 
-ContextForge is currently in **public beta**.
+ContextForge is currently in public beta.
 
-Feedback, bug reports, unexpected behavior, and reproducible test cases are welcome.
+Bug reports and reproducible test cases are welcome.
 
 When reporting an issue, please include:
 
 - ContextForge version
 - Windows version
-- what you attempted to do
-- expected behavior
-- actual behavior
-- screenshots or error messages when possible
+- steps to reproduce
+- expected result
+- actual result
+- screenshots or error messages
 
 ---
 
-## Version
+<div align="center">
 
-**ContextForge 2.1.0**
+## ContextForge 2.1.0
 
-**Distill the signal. Keep the evidence.**
+### Distill the signal. Keep the evidence.
+
+[Download for Windows](https://github.com/Jewel777/ContextForge/releases/download/v2.1.0/ContextForge-2.1.0-Windows-x64.zip)
+
+</div>
