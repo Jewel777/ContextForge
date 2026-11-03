@@ -30,7 +30,18 @@ Source code is maintained privately.
 
 ## Windows
 
-A downloadable Windows build will be provided through the **Releases** section of this repository.
+## Windows
+
+Download the latest Windows build from the **Releases** section.
+
+### Installation
+
+1. Download `ContextForge-2.1.0-Windows-x64.zip`
+2. Extract the ZIP
+3. Run `Start-ContextForge.ps1`
+4. ContextForge will open at `http://127.0.0.1:3000`
+
+No separate Python, Node.js, or embedding-model installation is required.
 
 ## Status
 
