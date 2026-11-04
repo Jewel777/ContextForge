@@ -1,0 +1,10 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/Jewel777/ContextForge/security
+    about: Please report security vulnerabilities privately instead of opening a public issue.
+
+  - name: ContextForge Releases
+    url: https://github.com/Jewel777/ContextForge/releases
+    about: Download the latest official ContextForge release.
