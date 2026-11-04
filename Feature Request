@@ -1,0 +1,52 @@
+---
+name: Feature request
+about: Suggest an improvement or new capability for ContextForge
+title: "[Feature] "
+labels: enhancement
+assignees: ""
+---
+
+## Feature summary
+
+Describe the feature or improvement you would like to see.
+
+## Problem or use case
+
+What problem would this solve?
+
+Who would benefit from it?
+
+## Proposed behavior
+
+Describe how you think the feature should work.
+
+## Example workflow
+
+If helpful, describe an example:
+
+1.
+2.
+3.
+
+## Why this matters
+
+Explain why this feature would improve ContextForge.
+
+## Alternatives considered
+
+Have you considered any alternative solution or workaround?
+
+## Additional context
+
+Add screenshots, mockups, examples, references, or related ideas if useful.
+
+## Platform
+
+- [ ] Windows x64
+- [ ] macOS Apple Silicon
+- [ ] Cross-platform
+- [ ] Other
+
+## Notes
+
+ContextForge is currently in public beta, so feature ideas and workflow feedback are especially welcome.
