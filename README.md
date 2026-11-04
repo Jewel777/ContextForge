@@ -20,7 +20,7 @@
 
 <br><br>
 
-### Download ContextForge 2.1.0
+## ⬇️ Download ContextForge 2.1.0
 
 [![Windows Download](https://img.shields.io/badge/Windows_x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Jewel777/ContextForge/releases/download/v2.1.0/ContextForge-2.1.0-Windows-x64.zip)
 &nbsp;
@@ -32,7 +32,7 @@
 
 ---
 
-## Why ContextForge?
+## 🚀 What is ContextForge?
 
 Large documents are easy to send to an AI model.
 
@@ -63,11 +63,11 @@ Large Source
  ChatGPT Claude Gemini
 ```
 
-ContextForge is designed for tasks where losing a single requirement, limit, deadline, prohibition, or source relationship can materially change the result.
+ContextForge is designed for workflows where losing a single requirement, limit, deadline, prohibition, control, or source relationship can materially change the result.
 
 ---
 
-## What makes it different?
+## ✨ What makes ContextForge different?
 
 Most context-reduction workflows answer one question:
 
@@ -75,7 +75,7 @@ Most context-reduction workflows answer one question:
 
 ContextForge goes further:
 
-> **What must survive — and can we prove that it survived?**
+> **What must survive — and can we verify that it survived?**
 
 | Capability | ContextForge |
 |---|---|
@@ -96,19 +96,28 @@ ContextForge goes further:
 
 ---
 
-## Core capabilities
+## 🧠 Core Capabilities
 
-### 🧠 Hybrid retrieval
+### Hybrid Retrieval
 
 ContextForge combines semantic similarity with lexical evidence instead of relying on a single retrieval signal.
 
-This helps preserve exact terminology, identifiers, requirements, and domain-specific language that purely semantic systems may overlook.
+This helps preserve:
 
-### 🗂 Hierarchical retrieval
+- exact terminology
+- identifiers
+- requirements
+- numeric constraints
+- security controls
+- domain-specific language
+
+that purely semantic retrieval may overlook.
+
+### Hierarchical Retrieval
 
 Evidence can be evaluated across document structure and sentence-level context, allowing ContextForge to retain relevant information without blindly forwarding entire documents.
 
-### 🛡 Critical evidence protection
+### Critical Evidence Protection
 
 ContextForge is designed to recognize and protect information such as:
 
@@ -122,7 +131,7 @@ ContextForge is designed to recognize and protect information such as:
 - thresholds
 - structured constraints
 
-### 🔢 Numeric preservation
+### Numeric Preservation
 
 Numbers often carry more meaning than surrounding prose.
 
@@ -137,7 +146,7 @@ ContextForge explicitly tracks numeric evidence such as:
 3 retries
 ```
 
-### 🔎 Evidence inspection
+### Evidence Inspection
 
 You can inspect:
 
@@ -150,7 +159,7 @@ You can inspect:
 - confidence signals
 - evidence classifications
 
-### 📊 Trust and coverage
+### Trust & Coverage
 
 Before handing compiled context to a model, ContextForge evaluates evidence quality through checks including:
 
@@ -162,61 +171,31 @@ Before handing compiled context to a model, ContextForge evaluates evidence qual
 
 ---
 
-## Quick start
+# ⚡ Quick Start
 
-### Windows x64
+## Windows x64
 
-**1. Download**
+### 1. Download
 
 [`ContextForge-2.1.0-Windows-x64.zip`](https://github.com/Jewel777/ContextForge/releases/download/v2.1.0/ContextForge-2.1.0-Windows-x64.zip)
 
-**2. Extract the ZIP**
+### 2. Extract
 
-Right-click → **Extract All...**
+Right-click the ZIP and choose:
 
-**3. Launch**
+**Extract All...**
 
-Double-click:
+### 3. Launch
+
+Open the extracted folder and double-click:
 
 ```text
 Start-ContextForge.cmd
 ```
 
----
+### 4. Use ContextForge
 
-### macOS Apple Silicon
-
-For Macs using Apple Silicon:
-
-- M1
-- M2
-- M3
-- M4
-- later Apple Silicon processors
-
-**1. Download**
-
-[`ContextForge-2.1.0-macOS-arm64.zip`](https://github.com/Jewel777/ContextForge/releases/download/v2.1.0/ContextForge-2.1.0-macOS-arm64.zip)
-
-**2. Extract the ZIP**
-
-**3. Open the extracted folder**
-
-**4. Launch**
-
-Double-click:
-
-```text
-Start-ContextForge.command
-```
-
----
-
-### After launch
-
-ContextForge starts its local engine and web interface automatically.
-
-The browser opens at:
+Your browser opens automatically at:
 
 ```text
 http://127.0.0.1:3000
@@ -228,13 +207,90 @@ When ready, the interface displays:
 ● Engine online
 ```
 
-> ContextForge 2.1.0 is currently unsigned. Windows or macOS may display a security warning on first launch. See the security section below.
+---
+
+## macOS Apple Silicon
+
+Supported on Apple Silicon Macs, including:
+
+- M1
+- M2
+- M3
+- M4
+- later Apple Silicon processors
+
+### 1. Download
+
+[`ContextForge-2.1.0-macOS-arm64.zip`](https://github.com/Jewel777/ContextForge/releases/download/v2.1.0/ContextForge-2.1.0-macOS-arm64.zip)
+
+### 2. Extract
+
+Double-click the downloaded ZIP file.
+
+### 3. Open the extracted folder
+
+Open:
+
+```text
+ContextForge-2.1.0-macOS-arm64
+```
+
+### 4. Launch
+
+Double-click:
+
+```text
+Start-ContextForge.command
+```
+
+### 5. First-launch macOS permission
+
+ContextForge 2.1.0 is currently unsigned.
+
+On the first launch, macOS may display a warning similar to:
+
+```text
+Apple could not verify “Start-ContextForge.command”
+is free of malware that may harm your Mac
+or compromise your privacy.
+```
+
+If this happens:
+
+1. Click **Done**
+2. Open **System Settings**
+3. Go to **Privacy & Security**
+4. Scroll down to the **Security** section
+5. Find the message showing that `Start-ContextForge.command` was blocked
+6. Click **Open Anyway**
+7. Authenticate with Touch ID or your password if prompted
+8. Confirm **Open**
+
+After this one-time approval, launch `Start-ContextForge.command` again.
+
+The launcher clears the quarantine attribute from the extracted ContextForge package so the bundled local runtime components can start without repeated Gatekeeper prompts.
+
+### 6. Use ContextForge
+
+The browser opens automatically at:
+
+```text
+http://127.0.0.1:3000
+```
+
+When ready, the interface displays:
+
+```text
+● Engine online
+```
+
+> The macOS Apple Silicon package has been tested from a fresh download/extraction flow using the included launcher and bundled runtime.
 
 ---
 
-## A typical workflow
+## 🎯 Typical Workflow
 
-### 01 — Add source material
+### 01 · Add Source Material
 
 Upload:
 
@@ -246,9 +302,9 @@ TXT
 
 or paste text directly.
 
-### 02 — Define what matters
+### 02 · Define the Objective
 
-Tell ContextForge what information must survive compression.
+Tell ContextForge what information must survive.
 
 Example:
 
@@ -260,13 +316,13 @@ Preserve exact numeric limits and exclude
 unrelated operational details.
 ```
 
-### 03 — Compile
+### 03 · Compile
 
 Choose a context budget and processing mode.
 
 ContextForge retrieves, evaluates, ranks, and compiles the relevant evidence.
 
-### 04 — Verify
+### 04 · Verify
 
 Before sending anything to an AI model, inspect:
 
@@ -279,7 +335,7 @@ Before sending anything to an AI model, inspect:
 - objective coverage
 - retrieval diagnostics
 
-### 05 — Handoff
+### 05 · Handoff
 
 Use the compiled context with:
 
@@ -292,7 +348,7 @@ Use the compiled context with:
 
 ---
 
-## Processing modes
+## 🎚️ Processing Modes
 
 | Mode | Purpose |
 |---|---|
@@ -306,11 +362,11 @@ The goal is to reduce context **without silently destroying evidence that matter
 
 ---
 
-## Standard and Advanced interfaces
+## 🖥️ Standard vs Advanced
 
 ### Standard
 
-Designed for focused everyday use.
+Designed for focused everyday use:
 
 ```text
 Add Source
@@ -337,9 +393,9 @@ Provides deeper visibility into ContextForge's internal decisions, including:
 
 ---
 
-## Context Inspector
+## 🔎 Context Inspector
 
-The Context Inspector exposes the reasoning structure behind a compiled context package.
+The Context Inspector exposes the evidence structure behind a compiled context package.
 
 It can surface:
 
@@ -359,7 +415,7 @@ This allows users to inspect the context **before** it reaches the model.
 
 ---
 
-## Local-first architecture
+## 🔐 Local-First Architecture
 
 ContextForge is distributed as a self-contained local application.
 
@@ -377,7 +433,7 @@ ContextForge-2.1.0/
 └── logs/
 ```
 
-### macOS package
+### macOS Apple Silicon package
 
 ```text
 ContextForge-2.1.0-macOS-arm64/
@@ -404,7 +460,18 @@ the embedding model
 
 ---
 
-## Privacy
+## 🌐 Local Services
+
+| Component | Local address |
+|---|---|
+| ContextForge UI | `http://127.0.0.1:3000` |
+| ContextForge Engine | `http://127.0.0.1:8001` |
+
+These services run locally on your computer.
+
+---
+
+## 🔒 Privacy
 
 ContextForge is designed around **local-first processing**.
 
@@ -422,18 +489,7 @@ ContextForge does not change the policies of services such as ChatGPT, Claude, o
 
 ---
 
-## Local services
-
-| Component | Local address |
-|---|---|
-| ContextForge UI | `http://127.0.0.1:3000` |
-| ContextForge Engine | `http://127.0.0.1:8001` |
-
-These services are used by the local application.
-
----
-
-## Example
+## 🧪 Example
 
 ### Source
 
@@ -456,7 +512,7 @@ Preserve exact numeric limits.
 Exclude unrelated operational details.
 ```
 
-### ContextForge result
+### ContextForge Result
 
 ```text
 Authentication requires JWT tokens.
@@ -467,13 +523,13 @@ After five failed login attempts,
 the account is locked for 20 minutes.
 ```
 
-The cafeteria sentence is excluded.
+The unrelated cafeteria sentence is excluded.
 
 The security requirements and exact numeric constraints remain traceable.
 
 ---
 
-## Trust checks
+## 📊 Trust Checks
 
 ContextForge evaluates the quality of the compiled context before model handoff.
 
@@ -489,11 +545,11 @@ Hard Evidence           PASS
 
 A review state does not automatically mean failure.
 
-For example, if the objective asks for authentication, security, database, and deployment requirements but the source only contains authentication and security evidence, ContextForge can flag incomplete objective coverage rather than inventing missing information.
+For example, if the objective asks for authentication, security, database, and deployment requirements but the source only contains authentication and security evidence, ContextForge can flag incomplete objective coverage instead of inventing missing information.
 
 ---
 
-## Supported platforms
+## 💻 Platform Support
 
 | Platform | Status |
 |---|---|
@@ -504,14 +560,14 @@ For example, if the objective asks for authentication, security, database, and d
 
 ---
 
-## Security notice
+## ⚠️ Security Notice
 
 ContextForge 2.1.0 is a **public beta** and is currently **not code-signed**.
 
 Because of this:
 
 - Windows may display a SmartScreen warning.
-- macOS may display a Gatekeeper warning.
+- macOS may display a Gatekeeper warning on first launch.
 - Users should only download ContextForge from the official repository and release page.
 
 Official repository:
@@ -524,7 +580,7 @@ Official release:
 
 ---
 
-## Release checksums
+## 🔐 Release Checksums
 
 Verify downloaded packages using SHA-256.
 
@@ -541,12 +597,12 @@ ContextForge-2.1.0-Windows-x64.zip
 ```text
 ContextForge-2.1.0-macOS-arm64.zip
 
-958FD54D75E630D83DD4F46722A6465CDBA0864EC640BE6E21F341B23CE7F073
+C923DA55A544530A34C2C72FE92C2AE3C8BC39DE816EC47B2CA65623FA75A21E
 ```
 
 ---
 
-## Current release
+## 📦 Current Release
 
 ### ContextForge 2.1.0 — First Public Beta
 
@@ -584,9 +640,9 @@ Included in this release:
 
 ---
 
-## Beta feedback
+## 🐛 Feedback & Issues
 
-ContextForge is actively being tested.
+ContextForge is currently in public beta.
 
 Useful reports include:
 
@@ -620,9 +676,9 @@ logs/
 
 ---
 
-## Roadmap
+## 🗺️ Roadmap
 
-Areas planned for future development include:
+Planned areas include:
 
 - macOS Intel support
 - Linux packaging
@@ -636,7 +692,7 @@ Areas planned for future development include:
 
 ---
 
-## Project philosophy
+## 💡 Project Philosophy
 
 ContextForge is built around a simple principle:
 
@@ -648,7 +704,7 @@ The system is designed to optimize context while keeping the evidence needed to 
 
 <div align="center">
 
-## ⚡ ContextForge
+# ⚡ ContextForge
 
 ### Distill the signal. Keep the evidence.
 
