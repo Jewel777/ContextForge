@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use ContextForge in research or academic work, please cite this software."
+title: "ContextForge"
+type: software
+authors:
+  - family-names: "Jewel"
+    given-names: "Md Julfiker Ali"
+version: "2.1.0"
+date-released: "2026-11-03"
+url: "https://github.com/Jewel777/ContextForge"
+repository-code: "https://github.com/Jewel777/ContextForge"
+license: "LicenseRef-Proprietary"
+abstract: "ContextForge is a local-first AI context compiler for evidence-aware, traceable, and token-efficient model handoff."
+keywords:
+  - context engineering
+  - artificial intelligence
+  - retrieval
+  - local-first
+  - evidence traceability
+  - context compression
