@@ -1,87 +1,58 @@
-# Security Policy
+# ContextForge Production Security
 
-## Supported Versions
+ContextForge includes application-level production hardening for the public beta.
 
-ContextForge is currently in public beta.
+Implemented controls:
 
-| Version | Supported |
-|---|---|
-| 2.1.x | ✅ Yes |
-| Older versions | ❌ No |
+- exact production Origin enforcement
+- request-size limits for declared and streamed bodies
+- request IDs on engine responses
+- browser security headers and CSP
+- optional sliding-window engine rate limiting
+- restricted forwarded-header trust
+- security posture validation
+- public security-header smoke testing
 
-Users should always use the latest published release from the official repository:
+## Environment controls
 
-https://github.com/Jewel777/ContextForge/releases
+```text
+CONTEXTFORGE_MAX_REQUEST_BYTES=20971520
+CONTEXTFORGE_RATE_LIMIT_ENABLED=false
+CONTEXTFORGE_RATE_LIMIT_REQUESTS=600
+CONTEXTFORGE_RATE_LIMIT_WINDOW_SECONDS=60
+CONTEXTFORGE_FORWARDED_ALLOW_IPS=127.0.0.1,::1
+```
 
-## Reporting a Security Vulnerability
+The built-in rate limiter is process-local. For a multi-worker or horizontally
+scaled public deployment, use shared edge/load-balancer rate limiting.
 
-Please **do not open a public GitHub issue** for security vulnerabilities.
+Never set `CONTEXTFORGE_FORWARDED_ALLOW_IPS=*` in production.
 
-If you discover a security issue in ContextForge, report it privately through GitHub's security reporting features when available.
+## Validation
 
-Please include:
+```powershell
+.\engine\.venv\Scripts\python.exe .\tools\validate_security_posture.py
+.\tools\run_deployment_preflight.ps1
+```
 
-- ContextForge version
-- operating system
-- affected component
-- clear description of the issue
-- steps to reproduce
-- expected behavior
-- actual behavior
-- relevant logs, screenshots, or proof of concept
-- potential impact, if known
+After deployment:
 
-Avoid including sensitive personal information, credentials, API keys, tokens, or private documents in reports.
+```powershell
+.\engine\.venv\Scripts\python.exe .\tools\security_smoke_test.py --web https://your-domain.example
+.\engine\.venv\Scripts\python.exe .\tools\smoke_test_production.py --web https://your-domain.example
+```
 
-## Scope
+## Public beta edge requirements
 
-Security reports may include issues related to:
+The public edge should also provide:
 
-- local file handling
-- document parsing
-- local API exposure
-- input validation
-- path handling
-- bundled runtime components
-- authentication or authorization behavior
-- dependency-related vulnerabilities
-- unintended data exposure
-- unsafe execution behavior
-- installer or launcher behavior
+- HTTPS termination
+- HTTP to HTTPS redirect
+- shared/distributed rate limiting
+- request body-size limits
+- DDoS/basic bot protection
+- only the Next.js web service exposed publicly
+- the Python engine kept private
 
-## Local-First Architecture
-
-ContextForge is designed around local-first processing.
-
-The application uses local services on:
-
-- `http://127.0.0.1:3000`
-- `http://127.0.0.1:8001`
-
-Users should not intentionally expose these local services to untrusted networks.
-
-## Unsigned Beta Builds
-
-ContextForge 2.1.0 is currently distributed as an unsigned public beta.
-
-Windows SmartScreen or macOS Gatekeeper may display security warnings during first launch.
-
-Users should only download ContextForge from the official repository and release page:
-
-https://github.com/Jewel777/ContextForge
-
-https://github.com/Jewel777/ContextForge/releases
-
-## Response
-
-Security reports will be reviewed as quickly as practical.
-
-Confirmed issues may result in:
-
-- a patched release
-- updated documentation
-- dependency updates
-- launcher or packaging changes
-- additional mitigations
-
-Thank you for helping improve ContextForge security.
+Authentication and account-level authorization are separate milestones. This
+security layer hardens the unauthenticated public-beta application boundary.

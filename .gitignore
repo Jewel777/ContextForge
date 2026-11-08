@@ -1,0 +1,31 @@
+.venv/
+node_modules/
+.next/
+__pycache__/
+*.pyc
+engine/.cache/
+.env
+.env.local
+.DS_Store
+
+engine/.cache/
+# ContextForge generated release reports
+reports/release_report_*.json
+reports/release_report_*.md
+# ContextForge production secrets
+.env.production
+engine/.env
+web/.env.local
+web/.env.production
+
+# ContextForge server persistence
+engine/data/
+*.db
+*.db-shm
+*.db-wal
+# ContextForge local packaging artifacts
+dist/
+runtime/
+engine/build/
+engine/dist/
+engine/*.spec

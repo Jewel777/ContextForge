@@ -1,42 +1,27 @@
 # Changelog
 
-All notable changes to ContextForge will be documented in this file.
+All notable changes to ContextForge are documented here.
 
-## [2.1.0] - 2026-11-03
+## [2.1.1] - 2026-11-08
 
-### Added
+### Improved
+- Improved objective coverage under tight token budgets.
+- Improved semantic handling of endpoints, deprecation dates, authentication, rate limits, and payload limits.
+- Improved retrieval confidence alignment with final selected evidence.
+- Improved Trust and context-manifest coverage reporting.
+- Improved explainability metadata for selected evidence.
 
-- First public beta release
-- Windows x64 release package
-- macOS Apple Silicon release package
-- Local-first processing workflow
-- Evidence-aware context compilation
-- Context Inspector
-- Standard and Advanced modes
-- Hierarchical retrieval workflow
-- Token-budget-aware context generation
-- Source traceability and evidence preservation
-- Local backend and frontend runtime packaging
-- Bundled embedding model
-- Diagnostic logging
-- Security policy
-- Support guide
-- Bug report template
-- Feature request template
-- Pull request template
+### Fixed
+- Fixed unrelated numeric constraints displacing requested evidence.
+- Fixed false numeric facet coverage across incompatible objectives.
+- Fixed token-lifetime evidence being incorrectly selected for authentication-header-only tasks.
+- Fixed deprecation-date evidence being dropped under multi-objective tasks.
+- Fixed uncovered facets reporting misleading evidence counts.
 
-### Platform Support
+### Validation
+- 40/40 engine tests passing.
+- Final five-objective benchmark reaches full 5/5 coverage at the validated token-budget boundary.
 
-- Windows x64
-- macOS Apple Silicon
+## [2.1.0]
 
-### Planned
-
-- macOS Intel support
-- Linux support
-- Packaging and signing improvements
-- Additional retrieval and explainability features
-
----
-
-ContextForge is currently in public beta. Feedback and bug reports are welcome.
+- First public beta release of ContextForge.

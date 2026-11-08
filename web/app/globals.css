@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #07090d;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 14% 7%, rgba(99, 102, 241, 0.10), transparent 26%),
+    radial-gradient(circle at 88% 16%, rgba(34, 211, 238, 0.055), transparent 23%),
+    linear-gradient(180deg, #07090d 0%, #080a0f 58%, #07090d 100%);
+  color: #f5f7fb;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+::selection {
+  background: rgba(99, 102, 241, 0.35);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.015);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.09);
+  border: 3px solid transparent;
+  background-clip: padding-box;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+
+.cf-range {
+  appearance: none;
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  outline: none;
+}
+
+.cf-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  background: #a5b4fc;
+  border: 3px solid #11131a;
+  box-shadow: 0 0 0 1px rgba(165, 180, 252, 0.45);
+}
+
+.cf-range::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  background: #a5b4fc;
+  border: 3px solid #11131a;
+  box-shadow: 0 0 0 1px rgba(165, 180, 252, 0.45);
+}
