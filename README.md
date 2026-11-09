@@ -4,84 +4,83 @@
 
 ### Distill the signal. Keep the evidence.
 
-**A local-first AI context compiler that turns large documents and raw text into compact, traceable, model-ready context.**
+**A local-first context intelligence engine for turning large documents and raw text into compact, traceable, model-ready context.**
 
-<br>
+<br />
 
-[![Release](https://img.shields.io/badge/release-v2.1.2-F97316?style=for-the-badge)](https://github.com/Jewel777/ContextForge/releases/tag/v2.1.2)
-![Windows](https://img.shields.io/badge/Windows-x64-0078D6?style=for-the-badge&logo=windows&logoColor=white)
-![macOS](https://img.shields.io/badge/macOS-Apple%20Silicon-111111?style=for-the-badge&logo=apple&logoColor=white)
-![Status](https://img.shields.io/badge/status-public%20beta-F59E0B?style=for-the-badge)
-![Local First](https://img.shields.io/badge/processing-local--first-16A34A?style=for-the-badge)
+[![Release](https://img.shields.io/badge/Release-v2.1.2-111111?style=for-the-badge)](https://github.com/Jewel777/ContextForge/releases/tag/v2.1.2)
+[![Public Beta](https://img.shields.io/badge/Status-Public_Beta-F5A623?style=for-the-badge)](https://github.com/Jewel777/ContextForge/releases)
+[![Local First](https://img.shields.io/badge/Processing-Local_First-2EA44F?style=for-the-badge)](#-local-first-by-design)
 
-<br>
+[![Windows](https://img.shields.io/badge/Windows-x64-0078D4?style=for-the-badge&logo=windows11&logoColor=white)](https://github.com/Jewel777/ContextForge/releases/download/v2.1.2/ContextForge-2.1.2-Windows-x64.zip)
+[![macOS](https://img.shields.io/badge/macOS-Apple_Silicon-1D1D1F?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Jewel777/ContextForge/releases/download/v2.1.2/ContextForge-2.1.2-macOS-arm64.zip)
 
-<img src="docs/contextforge-ui.png" alt="ContextForge Interface" width="900">
+<br />
 
-<br><br>
+<img src="docs/contextforge-ui.png" alt="ContextForge Interface" width="920" />
 
-## ⬇️ Download ContextForge
+<br />
 
-### Desktop packages
+### Context engineering you can inspect before model handoff.
 
-[![Windows Download](https://img.shields.io/badge/Windows_x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Jewel777/ContextForge/releases/download/v2.1.0/ContextForge-2.1.0-Windows-x64.zip)
-&nbsp;
-[![macOS Download](https://img.shields.io/badge/macOS_Apple_Silicon-Download-111111?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Jewel777/ContextForge/releases/download/v2.1.0/ContextForge-2.1.0-macOS-arm64.zip)
-
-**Current packaged desktop build: v2.1.0**
-
-**Latest source release: v2.1.2**
-
-Self-contained desktop packages · No separate Python setup · No separate Node.js setup · Local embedding model included
+**Retrieve intelligently · Preserve critical evidence · Compress safely · Verify what survived**
 
 </div>
 
 ---
 
-## 🚀 What is ContextForge?
+## The problem ContextForge solves
 
 Large documents are easy to send to an AI model.
 
-Sending the **right information** is harder.
+Sending the **right evidence** is harder.
 
-ContextForge sits between your source material and the model. It retrieves relevant evidence, protects important requirements and numeric constraints, removes lower-value context, and shows you exactly what survived the compilation process.
+Long context can contain requirements, thresholds, security controls, deadlines, identifiers, numeric constraints, policies, and important relationships buried inside pages of lower-value material.
+
+ContextForge compiles that source material into a smaller, auditable context package.
 
 ```text
-Large Source
-     │
-     ▼
-┌─────────────────────┐
-│    ContextForge     │
-│                     │
-│  Retrieve           │
-│  Rank               │
-│  Preserve           │
-│  Compress           │
-│  Trace              │
-└──────────┬──────────┘
-           │
-           ▼
- Compact, verified,
- model-ready context
-           │
-     ┌─────┼─────┐
-     ▼     ▼     ▼
- ChatGPT Claude Gemini
+Raw documents / text
+        │
+        ▼
+┌───────────────────────────┐
+│       ContextForge        │
+│                           │
+│  Retrieve                 │
+│  Rank                     │
+│  Classify                 │
+│  Protect                  │
+│  Compress                 │
+│  Verify                   │
+└─────────────┬─────────────┘
+              │
+              ▼
+      Model-ready context
+              │
+       ┌──────┼──────┐
+       ▼      ▼      ▼
+    ChatGPT Claude Gemini
 ```
 
-ContextForge is designed for workflows where losing a single requirement, limit, deadline, prohibition, control, number, or source relationship can materially change the result.
+The goal is not simply to make context shorter.
+
+> **The goal is to reduce context without losing the evidence that changes the answer.**
 
 ---
 
-## ✨ What makes ContextForge different?
+## Why ContextForge is different
 
-Most context-reduction workflows answer one question:
+Traditional retrieval usually asks:
 
 > **What looks relevant?**
 
-ContextForge goes further:
+ContextForge also asks:
 
-> **What must survive — and can we verify that it survived?**
+> **What must survive?**
+
+and then:
+
+> **Can we prove that it survived?**
 
 | Capability | ContextForge |
 |---|:---:|
@@ -91,180 +90,173 @@ ContextForge goes further:
 | Evidence-aware compression | ✅ |
 | Numeric constraint preservation | ✅ |
 | Mandatory requirement protection | ✅ |
-| Prohibition / control awareness | ✅ |
+| Security / prohibition awareness | ✅ |
 | Selected evidence inspection | ✅ |
 | Rejected evidence inspection | ✅ |
 | Provenance tracing | ✅ |
-| Objective coverage checks | ✅ |
-| Hard-evidence coverage | ✅ |
-| Trust diagnostics | ✅ |
+| Objective coverage analysis | ✅ |
+| Hard-evidence validation | ✅ |
+| Explainability manifest | ✅ |
 | Local-first processing | ✅ |
-| Model-agnostic handoff | ✅ |
+| Model-agnostic output | ✅ |
 
 ---
 
-# 🧠 Core Capabilities
+# Core Intelligence
 
-## 🔎 Hybrid Retrieval
+<table>
+<tr>
+<td width="50%" valign="top">
 
-ContextForge combines semantic similarity with lexical evidence instead of relying on a single retrieval signal.
+### 🔎 Hybrid Retrieval
 
-This helps preserve:
+Combines semantic similarity with lexical evidence so exact terminology, identifiers, controls, and constraints are less likely to disappear.
 
-- exact terminology
-- identifiers
-- requirements
-- numeric constraints
-- security controls
-- domain-specific language
-- operational constraints
+</td>
+<td width="50%" valign="top">
 
-that purely semantic retrieval may overlook.
+### 🧭 Hierarchical Retrieval
 
----
+Evaluates evidence across document structure, sections, pages, and sentence-level context instead of treating a document as one flat block.
 
-## 🧭 Hierarchical Retrieval
+</td>
+</tr>
 
-Evidence can be evaluated across document structure and sentence-level context.
+<tr>
+<td width="50%" valign="top">
 
-Instead of blindly forwarding entire documents, ContextForge identifies the sections and sentences most relevant to the requested objective.
+### 🛡️ Critical Evidence Protection
 
----
+Designed to protect requirements such as:
 
-## 🛡️ Critical Evidence Protection
-
-ContextForge is designed to recognize and protect information such as:
-
-- mandatory requirements
+- mandatory controls
 - prohibitions
-- security controls
 - deadlines
-- numeric limits
-- durations
-- counts
-- thresholds
-- structured constraints
-- deployment requirements
-- policy conditions
+- deployment conditions
+- policy rules
+- security requirements
 
----
+</td>
+<td width="50%" valign="top">
 
-## 🔢 Numeric Preservation
+### 🔢 Numeric Preservation
 
-Numbers often carry more meaning than the surrounding prose.
-
-ContextForge explicitly protects numeric evidence such as:
+Explicitly protects evidence such as:
 
 ```text
 15 minutes
 5 failed attempts
-20 minutes
 256 MB
 90 days
 3 retries
 ```
 
-This helps prevent compression from silently changing important operational requirements.
+</td>
+</tr>
 
----
+<tr>
+<td width="50%" valign="top">
 
-## 🔍 Evidence Inspection
+### 🔍 Evidence Inspection
 
-You can inspect:
+Inspect what was:
 
-- what was selected
-- what was rejected
-- why evidence was retained
-- why evidence was rejected
-- matched objectives and facets
-- evidence classification
-- semantic role
-- source page
-- source section
-- structured constraints
-- provenance
-- confidence signals
+- selected
+- rejected
+- preserved
+- classified
+- mapped to objectives
+- traced to source
 
----
+</td>
+<td width="50%" valign="top">
 
-## ✅ Trust & Coverage
+### ✅ Trust & Coverage
 
-Before handing compiled context to a model, ContextForge evaluates the quality of the retained evidence.
+Evaluates:
 
-Checks include:
-
-- critical evidence preservation
+- critical evidence coverage
 - numeric preservation
-- provenance coverage
 - objective coverage
 - facet coverage
+- provenance
 - hard-evidence completeness
 
-ContextForge is designed to surface uncertainty rather than silently invent missing evidence.
+</td>
+</tr>
+</table>
 
 ---
 
-# ⚡ Quick Start
+# Download
+
+<div align="center">
+
+### ContextForge v2.1.2 Desktop
+
+<br />
+
+[![Download Windows](https://img.shields.io/badge/Download-Windows_x64-0078D4?style=for-the-badge&logo=windows11&logoColor=white)](https://github.com/Jewel777/ContextForge/releases/download/v2.1.2/ContextForge-2.1.2-Windows-x64.zip)
+
+[![Download macOS](https://img.shields.io/badge/Download-macOS_Apple_Silicon-1D1D1F?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Jewel777/ContextForge/releases/download/v2.1.2/ContextForge-2.1.2-macOS-arm64.zip)
+
+<br />
+
+**Self-contained desktop packages**
+
+No separate Python installation · No separate Node.js installation · Local embedding model included
+
+</div>
+
+---
+
+# Quick Start
 
 ## 🪟 Windows x64
 
 ### 1. Download
 
-[**ContextForge-2.1.0-Windows-x64.zip**](https://github.com/Jewel777/ContextForge/releases/download/v2.1.0/ContextForge-2.1.0-Windows-x64.zip)
+[**ContextForge-2.1.2-Windows-x64.zip**](https://github.com/Jewel777/ContextForge/releases/download/v2.1.2/ContextForge-2.1.2-Windows-x64.zip)
 
 ### 2. Extract
 
-Right-click the ZIP file and choose:
+Use **Extract All...**
 
-**Extract All...**
+### 3. Start
 
-### 3. Launch
-
-Open the extracted folder and double-click:
+Double-click:
 
 ```text
 Start-ContextForge.cmd
 ```
 
-### 4. Use ContextForge
+ContextForge automatically starts the local engine and interface, selects available local ports, and opens your browser.
 
-Your browser opens automatically at:
+### 4. Stop
 
-```text
-http://127.0.0.1:3000
-```
-
-When ready, the interface displays:
+Double-click:
 
 ```text
-● Engine online
+Stop-ContextForge.cmd
 ```
 
 ---
 
 ## 🍎 macOS Apple Silicon
 
-Supported on Apple Silicon Macs including:
+Supported on:
 
-- M1
-- M2
-- M3
-- M4
-- later Apple Silicon processors
+**M1 · M2 · M3 · M4 · newer Apple Silicon**
 
 ### 1. Download
 
-[**ContextForge-2.1.0-macOS-arm64.zip**](https://github.com/Jewel777/ContextForge/releases/download/v2.1.0/ContextForge-2.1.0-macOS-arm64.zip)
+[**ContextForge-2.1.2-macOS-arm64.zip**](https://github.com/Jewel777/ContextForge/releases/download/v2.1.2/ContextForge-2.1.2-macOS-arm64.zip)
 
 ### 2. Extract
 
-Double-click the downloaded ZIP.
+Double-click the ZIP.
 
-### 3. Open
-
-Open the extracted ContextForge folder.
-
-### 4. Launch
+### 3. Start
 
 Double-click:
 
@@ -272,44 +264,47 @@ Double-click:
 Start-ContextForge.command
 ```
 
-### 5. First-launch macOS permission
+### 4. First-launch permission
 
-The current packaged build is unsigned.
+The current public-beta package is not notarized.
 
-macOS may display a Gatekeeper warning on first launch.
+If macOS blocks the launcher:
 
-If this happens:
+**System Settings → Privacy & Security → Open Anyway**
 
-1. Click **Done**
-2. Open **System Settings**
-3. Open **Privacy & Security**
-4. Scroll to **Security**
-5. Locate the blocked ContextForge launcher
-6. Click **Open Anyway**
-7. Authenticate if prompted
-8. Confirm **Open**
+Approve ContextForge and launch it again.
 
-After the one-time approval, launch ContextForge again.
+### 5. Stop
 
-### 6. Use ContextForge
-
-The browser opens at:
+Double-click:
 
 ```text
-http://127.0.0.1:3000
-```
-
-When ready:
-
-```text
-● Engine online
+Stop-ContextForge.command
 ```
 
 ---
 
-# 🎯 Typical Workflow
+# Workflow
 
-## 01 · Add Source Material
+ContextForge keeps the core workflow intentionally simple.
+
+```text
+01  Add source material
+        ↓
+02  Define what must survive
+        ↓
+03  Choose compression strategy
+        ↓
+04  Compile
+        ↓
+05  Inspect retained evidence
+        ↓
+06  Hand off to your model
+```
+
+---
+
+## 01 · Add source material
 
 Upload:
 
@@ -319,13 +314,13 @@ DOCX
 TXT
 ```
 
-or paste text directly.
+or paste source text directly.
 
 ---
 
-## 02 · Define the Objective
+## 02 · Define the objective
 
-Tell ContextForge what information must survive.
+Tell ContextForge what information matters.
 
 Example:
 
@@ -339,168 +334,164 @@ unrelated operational details.
 
 ---
 
-## 03 · Choose a Strategy
+## 03 · Choose a strategy
 
-ContextForge provides three compilation modes:
-
-| Mode | Purpose |
+| Strategy | Best for |
 |---|---|
-| 🛡️ **Safe** | Maximum evidence preservation |
-| ⚖️ **Balanced** | Best default for most workflows |
+| 🛡️ **Safe** | Maximum supporting evidence |
+| ⚖️ **Balanced** | Best default for most tasks |
 | ⚡ **Aggressive** | Stronger context reduction |
 
-You can also define a strict token ceiling.
+A strict token ceiling can also be configured.
 
 ---
 
 ## 04 · Compile
 
-ContextForge:
+ContextForge runs a structured evidence pipeline:
 
 ```text
-Parses
+Parse
   ↓
-Retrieves
+Retrieve
   ↓
-Ranks
+Rank
   ↓
-Classifies
+Classify
   ↓
-Protects critical evidence
+Protect critical evidence
   ↓
-Checks coverage
+Validate coverage
   ↓
-Compresses
+Compress
   ↓
-Builds the final context
+Pack
 ```
 
 ---
 
 ## 05 · Verify
 
-Before sending anything to an AI model, inspect:
+Before model handoff, inspect:
 
 - compiled output
 - selected evidence
 - rejected evidence
 - rejection reasons
 - evidence lineage
-- provenance
-- trust summary
+- source provenance
 - objective coverage
 - numeric preservation
-- retrieval diagnostics
+- trust diagnostics
 
 ---
 
 ## 06 · Handoff
 
-Use the compiled context with:
+Use the compiled result with:
 
 - ChatGPT
 - Claude
 - Gemini
 - AI agents
-- prompt-engineering workflows
-- custom AI pipelines
 - model APIs
+- RAG pipelines
+- prompt-engineering systems
+- custom AI applications
 
 ---
 
-# 🖥️ Standard vs Advanced
+# Context Inspector
 
-## Standard
+The **Context Inspector** makes the compilation process visible.
 
-Designed for focused everyday use:
-
-```text
-Add Source
-    ↓
-Define Objective
-    ↓
-Choose Strategy
-    ↓
-Compile
-    ↓
-Review
-```
-
-Standard mode keeps the primary workflow simple and focused.
-
----
-
-## Advanced
-
-Advanced mode exposes deeper engineering and governance controls, including:
-
-- evidence provenance
-- selected evidence
-- rejected evidence
-- retrieval diagnostics
-- trust metrics
-- objective coverage
-- policy controls
-- regression baselines
-- workspace state
-- conflict analysis
-- audit history
-- persistence controls
-- operational diagnostics
-
----
-
-# 🔎 Context Inspector
-
-The Context Inspector exposes the evidence structure behind a compiled context package.
-
-It can surface:
+It can expose:
 
 ```text
 Selected Evidence
 Rejected Evidence
 Evidence Types
+Matched Objectives
 Matched Facets
 Numeric Constraints
 Structured Constraints
 Semantic Roles
+Source Pages
+Source Sections
 Provenance
 Trust Metrics
 Coverage
 Diagnostics
 ```
 
-This allows users to inspect the context **before it reaches the model**.
+This allows users to inspect the evidence package **before it reaches another model**.
 
 ---
 
-# 📋 Context Manifest
+# Explainability Manifest
 
-ContextForge can generate a structured explainability manifest describing how the compiled context was assembled.
+ContextForge can generate a structured manifest describing how a compiled context package was constructed.
 
-The manifest can contain:
+The manifest may contain:
 
 - retrieval strategy
 - selected evidence
 - rejected evidence
 - rejection reasons
-- covered facets
-- pages used
-- evidence types
-- structured constraints
+- evidence classifications
 - semantic roles
-- trust metrics
+- structured constraints
+- pages used
+- covered facets
 - provenance metadata
+- trust metrics
 
-The manifest can also be exported for auditing and downstream workflows.
+This makes context compilation easier to inspect, audit, export, and integrate into downstream systems.
 
 ---
 
-# 🔐 Local-First Architecture
+# Standard and Advanced Modes
 
-ContextForge is designed around local-first processing.
+## Standard
 
-The core application does not require a paid language model for retrieval and context compilation.
+Designed for focused use:
+
+```text
+Source
+   ↓
+Objective
+   ↓
+Strategy
+   ↓
+Compile
+   ↓
+Verify
+```
+
+Standard mode hides unnecessary engineering controls.
+
+## Advanced
+
+Advanced mode exposes deeper operational and governance functionality:
+
+- retrieval diagnostics
+- evidence provenance
+- selected / rejected evidence
+- trust metrics
+- objective coverage
+- policy controls
+- regression baselines
+- persistence state
+- workspace state
+- conflict analytics
+- audit history
+- operational diagnostics
+
+---
+
+# Local-first by design
+
+ContextForge is designed so its core context compilation workflow can run locally.
 
 ```text
 Source Material
@@ -515,7 +506,7 @@ Hierarchical Retrieval
 Evidence Ranking
       │
       ▼
-Constraint Preservation
+Constraint Protection
       │
       ▼
 Coverage Validation
@@ -530,37 +521,21 @@ Explainability Manifest
 Model-Ready Context
 ```
 
----
-
-# 🌐 Local Services
-
-| Component | Local Address |
-|---|---|
-| ContextForge UI | `http://127.0.0.1:3000` |
-| ContextForge Engine | `http://127.0.0.1:8001` |
-
-These services run locally on your computer.
+The application does **not require a paid LLM** to perform its core retrieval and compilation workflow.
 
 ---
 
-# 🔒 Privacy
-
-ContextForge is designed around **local-first processing**.
+# Privacy
 
 Source documents are processed by the ContextForge engine.
 
+ContextForge itself does not automatically send your source material to ChatGPT, Claude, Gemini, or another commercial model as part of the core local compilation workflow.
+
 If you manually copy compiled output into an external AI provider, that provider's privacy and data-handling policies apply.
-
-ContextForge does not change the policies of:
-
-- ChatGPT
-- Claude
-- Gemini
-- other external AI systems
 
 ---
 
-# 🧪 Example
+# Example
 
 ### Source
 
@@ -583,7 +558,7 @@ Preserve exact numeric limits.
 Exclude unrelated operational details.
 ```
 
-### ContextForge Result
+### Compiled context
 
 ```text
 Authentication requires JWT tokens.
@@ -594,15 +569,15 @@ After five failed login attempts,
 the account is locked for 20 minutes.
 ```
 
-The cafeteria sentence is discarded.
+The cafeteria sentence is removed.
 
-The security requirements and numeric constraints remain traceable.
+The security requirements and their numeric constraints remain traceable.
 
 ---
 
-# 📊 Trust Checks
+# Trust Checks
 
-ContextForge evaluates compiled context before model handoff.
+ContextForge evaluates the retained evidence before model handoff.
 
 Example:
 
@@ -614,63 +589,117 @@ Objective Coverage      PASS / REVIEW
 Hard Evidence           PASS
 ```
 
-A **REVIEW** state does not necessarily mean failure.
+A **REVIEW** state does not automatically mean failure.
 
-For example, if an objective requests authentication, database, deployment, and security requirements but the source contains only authentication and security evidence, ContextForge can flag incomplete coverage instead of inventing missing information.
-
----
-
-# 🧰 Tech Stack
-
-## Backend
-
-- Python
-- FastAPI
-- Sentence Transformers
-- `all-MiniLM-L6-v2`
-- PyMuPDF
-- python-docx
-- SQLite
-- tiktoken
-- Uvicorn
-
-## Frontend
-
-- Next.js 16
-- React 19
-- TypeScript
-- Tailwind CSS
-
-## Deployment
-
-- Docker
-- Docker Compose
-- production health checks
-- security posture validation
-- configurable origin policy
-- request-size controls
-- optional authentication foundation
-- optional server persistence
+For example, if an objective requests authentication, database, deployment, and security requirements while the source contains only authentication and security evidence, ContextForge can report incomplete coverage rather than invent missing information.
 
 ---
 
-# 🧑‍💻 Developer Setup
+# Release Validation
 
-## Backend
+ContextForge includes an automated release gate:
 
 ```powershell
+.\tools\run_release_gate.ps1
+```
+
+The release pipeline validates areas including:
+
+- retrieval regressions
+- extended retrieval benchmarks
+- production benchmark
+- frontend production build
+- critical fact recall
+- numeric recall
+- distractor rejection
+- provenance accuracy
+- facet coverage
+- context reduction
+
+### v2.1.2 validated benchmark
+
+| Metric | Result |
+|---|---:|
+| Critical fact recall | **100%** |
+| Numeric recall | **100%** |
+| Distractor rejection | **100%** |
+| Provenance accuracy | **100%** |
+| Facet coverage | **7 / 7** |
+| Context reduction | **68.99%** |
+
+---
+
+# Architecture
+
+```text
+┌───────────────────────────────────────────────────────┐
+│                    ContextForge                       │
+├─────────────────────────┬─────────────────────────────┤
+│       Frontend          │          Engine             │
+│                         │                             │
+│  Next.js 16             │  Python                    │
+│  React 19               │  FastAPI                   │
+│  TypeScript             │  Sentence Transformers     │
+│  Tailwind CSS           │  SQLite                    │
+│                         │  PyMuPDF                    │
+│                         │  python-docx                │
+│                         │  tiktoken                   │
+└─────────────────────────┴─────────────────────────────┘
+```
+
+### Embedding model
+
+```text
+all-MiniLM-L6-v2
+```
+
+---
+
+# Technology
+
+| Layer | Technology |
+|---|---|
+| Frontend | Next.js 16 |
+| UI | React 19 + TypeScript |
+| Styling | Tailwind CSS |
+| API | FastAPI |
+| Retrieval | Sentence Transformers |
+| Embeddings | all-MiniLM-L6-v2 |
+| Document parsing | PyMuPDF + python-docx |
+| Tokenization | tiktoken |
+| Persistence | SQLite |
+| Production server | Uvicorn |
+| Containers | Docker / Docker Compose |
+
+---
+
+# Developer Setup
+
+## Backend
+
+```bash
 cd engine
 
 python -m venv .venv
+```
 
+### Windows
+
+```powershell
 .\.venv\Scripts\Activate.ps1
-
 pip install -r requirements.txt
 ```
 
-Start the engine:
+### macOS / Linux
 
-```powershell
+```bash
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+Start:
+
+```bash
 python main.py
 ```
 
@@ -678,7 +707,7 @@ python main.py
 
 ## Frontend
 
-```powershell
+```bash
 cd web
 npm install
 npm run dev
@@ -692,17 +721,18 @@ http://localhost:3000
 
 ---
 
-# 🐳 Production Docker
+# Production Docker
 
-Create your production environment configuration and run:
-
-```powershell
-docker compose --env-file .env.production -f docker-compose.production.yml up --build -d
+```bash
+docker compose \
+  --env-file .env.production \
+  -f docker-compose.production.yml \
+  up --build -d
 ```
 
 Check status:
 
-```powershell
+```bash
 docker compose -f docker-compose.production.yml ps
 ```
 
@@ -715,145 +745,76 @@ web      healthy
 
 ---
 
-# ❤️ Health Check
-
-```powershell
-Invoke-WebRequest http://localhost:3000/api/health -UseBasicParsing
-```
-
-Expected:
-
-```text
-StatusCode : 200
-```
-
----
-
-# 🧪 Release Validation
-
-ContextForge includes an automated release gate.
-
-Run:
-
-```powershell
-.\tools\run_release_gate.ps1
-```
-
-The gate validates:
-
-- retrieval regressions
-- extended retrieval benchmarks
-- production benchmark
-- frontend production build
-- critical fact recall
-- numeric recall
-- distractor rejection
-- provenance accuracy
-- facet coverage
-- context reduction
-- working-tree cleanliness
-
-The validated `v2.1.2` production benchmark achieved:
-
-```text
-Critical fact recall     100%
-Numeric recall           100%
-Distractor rejection     100%
-Provenance accuracy      100%
-Facet coverage           7 / 7
-Context reduction        68.99%
-```
-
----
-
-# 💻 Platform Support
+# Platform Support
 
 | Platform | Status |
 |---|---|
-| Windows x64 | ✅ Packaged build available |
-| macOS Apple Silicon | ✅ Packaged build available |
+| Windows x64 | ✅ v2.1.2 package |
+| macOS Apple Silicon | ✅ v2.1.2 package |
 | macOS Intel | 🚧 Planned |
-| Linux | 🚧 Planned |
+| Linux desktop | 🚧 Planned |
 | Docker | ✅ Supported |
 
 ---
 
-# ⚠️ Security Notice
+# Security Notice
 
 ContextForge is currently a **public beta**.
 
-The packaged desktop builds are not currently code-signed.
+Desktop packages are currently distributed without commercial code signing / notarization.
 
-Because of this:
+As a result:
 
 - Windows may display a SmartScreen warning.
 - macOS may display a Gatekeeper warning.
-- Users should download ContextForge only from the official repository and release pages.
+- Downloads should come only from the official ContextForge repository.
 
 Official repository:
 
 **https://github.com/Jewel777/ContextForge**
 
-Latest source release:
+Latest release:
 
 **https://github.com/Jewel777/ContextForge/releases/tag/v2.1.2**
 
 ---
 
-# 📦 Releases
+# Roadmap
 
-## ContextForge v2.1.2
+Planned areas include:
 
-Latest source release.
-
-Highlights:
-
-- production container database permission fix
-- validated Docker production stack
-- retrieval regression verification
-- production benchmark verification
-- frontend production build verification
-- deployment and security tooling
-- expanded Advanced operations infrastructure
-
-[View ContextForge v2.1.2](https://github.com/Jewel777/ContextForge/releases/tag/v2.1.2)
+- package signing and notarization
+- Linux desktop packaging
+- macOS Intel support
+- broader document support
+- additional retrieval strategies
+- stronger evidence classification
+- richer trust diagnostics
+- improved context optimization
+- additional model handoff workflows
+- deployment improvements
+- continued UI/UX refinement
 
 ---
 
-## ContextForge v2.1.0
+# Feedback
 
-Current downloadable desktop package.
-
-Includes:
-
-- Windows x64 package
-- macOS Apple Silicon package
-- bundled runtime
-- bundled embedding model
-- local-first execution
-
-[View ContextForge v2.1.0](https://github.com/Jewel777/ContextForge/releases/tag/v2.1.0)
-
----
-
-# 🐛 Feedback & Issues
-
-ContextForge is currently in public beta.
+ContextForge is actively evolving.
 
 Useful reports include:
 
-- incorrect evidence selection
 - important evidence being removed
 - irrelevant evidence surviving
+- incorrect evidence selection
 - numeric constraints being changed or lost
 - incorrect provenance
 - misleading trust results
-- startup failures
 - document parsing problems
-- UI/UX problems
-- deployment issues
+- startup failures
+- deployment problems
+- UI/UX issues
 
-When opening an issue, please include:
+When opening an issue, include:
 
 ```text
 ContextForge version
@@ -867,42 +828,25 @@ Relevant screenshot or log
 
 ---
 
-# 🗺️ Roadmap
+# Project Philosophy
 
-Planned areas include:
+<div align="center">
 
-- updated v2.1.x desktop packages
-- Linux packaging
-- macOS Intel support
-- package signing
-- broader document support
-- additional retrieval strategies
-- stronger evidence classification
-- expanded trust diagnostics
-- improved context optimization
-- additional model handoff workflows
-- deployment improvements
-- UI/UX refinement
+### Compressing context is easy.
+
+## Preserving the right evidence is the hard part.
+
+ContextForge is designed to reduce context while preserving the evidence required to **understand, inspect, and trust** the final model handoff.
+
+</div>
 
 ---
 
-# 💡 Project Philosophy
-
-ContextForge is built around a simple principle:
-
-> **Compressing context is easy. Preserving the right evidence is the hard part.**
-
-ContextForge is designed to reduce context while preserving the evidence needed to understand, audit, and trust the final model handoff.
-
----
-
-# 📄 License
+## License
 
 See [LICENSE](LICENSE).
 
----
-
-# 📚 Citation
+## Citation
 
 Academic and research users can cite ContextForge using:
 
@@ -916,16 +860,16 @@ Academic and research users can cite ContextForge using:
 
 ### Distill the signal. Keep the evidence.
 
-**Compile less. Preserve more. Verify before handoff.**
+**Compile less · Preserve more · Verify before handoff**
 
-<br>
+<br />
 
-[![Windows Download](https://img.shields.io/badge/Download-Windows_x64-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Jewel777/ContextForge/releases/download/v2.1.0/ContextForge-2.1.0-Windows-x64.zip)
+[![Windows Download](https://img.shields.io/badge/Download-Windows_x64-0078D4?style=for-the-badge&logo=windows11&logoColor=white)](https://github.com/Jewel777/ContextForge/releases/download/v2.1.2/ContextForge-2.1.2-Windows-x64.zip)
 
-[![macOS Download](https://img.shields.io/badge/Download-macOS_Apple_Silicon-111111?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Jewel777/ContextForge/releases/download/v2.1.0/ContextForge-2.1.0-macOS-arm64.zip)
+[![macOS Download](https://img.shields.io/badge/Download-macOS_Apple_Silicon-1D1D1F?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Jewel777/ContextForge/releases/download/v2.1.2/ContextForge-2.1.2-macOS-arm64.zip)
 
-<br><br>
+<br />
 
-**Latest source: v2.1.2 · Desktop package: v2.1.0 · Public Beta**
+**v2.1.2 · Windows x64 · macOS Apple Silicon · Public Beta**
 
 </div>
